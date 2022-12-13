@@ -2,7 +2,7 @@ import { React, useState, useContext } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { Alert } from "reactstrap";
 import loginimg from "../assets/login.svg";
-import { LoginContext } from "../helper/Context";
+import { LoginContext } from "../helper/Helper";
 const API_URL = "https://salty-refuge-23420.herokuapp.com";
 
 function Login(props) {

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { LoginContext } from "./helper/Context";
+import { LoginContext } from "./helper/Helper";
 import Rankings from "./pages/Rankings";
 import Factors from "./pages/Factors";
 import Login from "./pages/Login";

@@ -42,7 +42,7 @@ export default function useCountryData(
 }
 
 function getCountryRankings(searchCountry, searchYear) {
-  const url = `https://salty-refuge-23420.herokuapp.com/rankings?year=${searchYear}&country=${searchCountry}`;
+  const url = `https://localhost:3000`;
   return fetch(url)
     .then((res) => res.json())
     .then((rankings) =>
@@ -64,7 +64,7 @@ function getCountryFactors(searchCountry, searchYear, searchLimit) {
     Authorization: `Bearer ${token}`,
   };
 
-  const url = `https://salty-refuge-23420.herokuapp.com/factors/${searchYear}?limit=${searchLimit}&country=${searchCountry}`;
+  const url = `https://localhost:3000`;
   return fetch(url, { headers })
     .then((res) => res.json())
     .then((countries) =>
